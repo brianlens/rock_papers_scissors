@@ -1,8 +1,8 @@
 import BaseModel from './BaseModel';
 
 class GameModel extends BaseModel {
-  default(){
-    return{
+  defaults() {
+    return {
       playerOne: null,
       playerTwo: null,
       playerOneMove: null,
@@ -11,13 +11,9 @@ class GameModel extends BaseModel {
     };
   }
 
-
-
-    constructor(){
+  constructor() {
     super('game');
   }
 }
-
-
 
 export default GameModel;
